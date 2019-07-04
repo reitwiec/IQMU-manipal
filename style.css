@@ -192,7 +192,7 @@ html {
 }
 
 #heart {
-    color: darkred !important;
+    color: #DB3143 !important;
     font-size: 18px;
     animation: heartbeat 1s infinite;
 }
