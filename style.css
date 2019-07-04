@@ -9,6 +9,143 @@ html {
     background: #fff;
 }
 
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+
+
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: white;
+    z-index: 1000;
+    -webkit-transform: translateX(0);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(0);
+    /* IE 9 */
+    transform: translateX(0);
+    /* Firefox 16+, IE 10+, Opera */
+}
+
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+
+/* Loaded */
+.loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(-100%);
+    /* IE 9 */
+    transform: translateX(-100%);
+    /* Firefox 16+, IE 10+, Opera */
+
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(100%);
+    /* IE 9 */
+    transform: translateX(100%);
+    /* Firefox 16+, IE 10+, Opera */
+
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded .gooey {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+
+    -webkit-transform: translateY(-100%);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateY(-100%);
+    /* IE 9 */
+    transform: translateY(-100%);
+    /* Firefox 16+, IE 10+, Opera */
+
+    -webkit-transition: all 0.3s 1s ease-out;
+    transition: all 0.3s 1s ease-out;
+}
+
+.gooey {
+    z-index: 2000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 40px;
+    margin: -20px 0 0 -71px;
+    background: white;
+    filter: contrast(20)
+}
+
+.dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    left: 15px;
+    filter: blur(4px);
+    background: #000;
+    border-radius: 50%;
+    transform: translateX(0);
+    animation: dot 2.8s infinite;
+}
+
+.dots {
+    transform: translateX(0);
+    margin-top: 12px;
+    margin-left: 31px;
+    animation: dots 2.8s infinite;
+}
+
+#loaditem {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+    filter: blur(4px);
+    background: #000;
+    border-radius: 50%;
+}
+
+@keyframes dot {
+    50% {
+        transform: translateX(96px)
+    }
+}
+
+@keyframes dots {
+    50% {
+        transform: translateX(-31px)
+    }
+}
+
+
+
+
 
 #redbg {
     height: 100vh;
@@ -57,7 +194,7 @@ html {
 }
 
 .navbar {
-    line-height: 120px;
+    line-height: 40px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -71,14 +208,17 @@ html {
 
 }
 
-.options {
+/* .options {
     display: flex;
     justify-content: space-around;
     width: 400px;
     font-size: 17px;
     font-weight: 300;
     color: white;
-}
+    height: 40px;
+    flex-wrap: wrap;
+
+} */
 
 .registerbtn {
     height: 40px;
@@ -101,7 +241,7 @@ html {
 
 #lh2 {
     margin: 0;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-left: 100px;
     font-size: 25px;
     font-weight: 400;
@@ -410,4 +550,186 @@ hr {
 #smlogos>img {
     margin: 10px 10px 0 10px;
     width: 25px;
+}
+
+/* 
+#events,
+#itinerary,
+#gallery {
+    text-decoration: none;
+    color: inherit;
+}
+
+#events:hover {
+    cursor: pointer;
+}
+
+#events:hover:after {
+    cursor: pointer;
+    content: "";
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 3px solid white;
+}
+
+#itinerary:hover {
+    cursor: pointer;
+}
+
+#itinerary:hover:after {
+    cursor: pointer;
+    content: "";
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 3px solid white;
+}
+
+#gallery:hover {
+    cursor: pointer;
+}
+
+#gallery:hover:after {
+    cursor: pointer;
+    content: "";
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 3px solid white;
+}
+
+#navhr {
+    height: .25rem;
+    width: 13%;
+    margin: 0;
+    margin-left: 0%;
+    background: tomato;
+    border: none;
+    transition: .3s ease-in-out;
+}
+
+#events:hover~#navhr {
+    margin-left: 9.5%;
+} */
+
+.container {
+    width: 400px;
+    /* margin: 0 auto; */
+}
+
+ul li {
+    display: inline;
+    text-align: center;
+}
+
+li>a {
+    display: inline-block;
+    width: 29%;
+    margin: 0;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 300;
+    color: white;
+}
+
+.events:hover~#navhr {
+    opacity: 1;
+    width: 10%;
+    margin-left: 10%;
+}
+
+.itinerary:hover~#navhr {
+    opacity: 1;
+    width: 13%;
+    margin-left: 38%;
+}
+
+.gallery:hover~#navhr {
+    opacity: 1;
+    width: 12%;
+    margin-left: 69%;
+}
+
+#navhr {
+    height: .20rem;
+    width: 0%;
+    opacity: 0;
+    margin: 0;
+    margin-left: 38%;
+    background: white;
+    border: none;
+    transition: .3s ease-in-out;
+}
+
+button {
+    transition: 0.5s;
+}
+
+button:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 8px 7px #CC1D36);
+}
+
+button:active {
+    outline: none;
+    border: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+
+.line-1 {
+    padding-right: 0px;
+    position: relative;
+    top: 50%;
+    width: 8.87em;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+.anim-typewriter {
+    animation: typewriter 2s steps(24) 4.5s 1 normal both,
+        blinkTextCursor 500ms steps(34) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 8.87em;
+        padding-right: 5px;
+    }
+}
+
+@keyframes typewriterback {
+    from {
+        width: 8.87em;
+        padding-right: 5px;
+
+    }
+
+    to {
+        width: 0;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
 }

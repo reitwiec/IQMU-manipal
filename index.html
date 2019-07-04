@@ -6,19 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <title>IQMU 2020</title>
+
 </head>
 
 <body>
+    <div id="loader-wrapper">
+        <div class="gooey">
+
+            <span class="dot" id="loaditem"></span>
+            <div class="dots">
+                <span id="loaditem"></span>
+                <span id="loaditem"></span>
+                <span id="loaditem"></span>
+            </div>
+        </div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
     <div id="redbg">
         <div id="nicered"></div>
         <img class="doctor" src="./assets/landing-01.svg">
         <div class="navbar">
-            <div class="nav-logo"><img class="logo" src="./assets/logo-01.svg"></div>
-            <div class="options">
-                <span id="events">Events</span>
-                <span id="itinerary">Itinerary</span>
-                <span id="gallery">Gallery</span>
+            <div class="nav-logo"><a href="#"><img class="logo" src="./assets/logo-01.svg"></a></div>
+            <div class="container">
+                <ul>
+                    <li class="events"><a href="#">Events</a></li>
+                    <li class="itinerary"><a href="#">Itinerary</a></li>
+                    <li class="gallery"><a href="#">Gallery</a></li>
+                    <hr id="navhr" />
+                </ul>
             </div>
             <button class="registerbtn">
                 Register Now
@@ -27,7 +47,7 @@
         <div id="landingcontent">
             <p id="lh1">International Quiz for Medical<br>Undergraduates 2020
             </p>
-            <p id="lh2">6<sup>th </sup>- 8<sup>th</sup> March 2020
+            <p id="lh2" class="line-1 anim-typewriter">6<sup>th </sup>- 8<sup>th</sup> March 2020
             </p>
             <p id="lh3">IQMU comprises of both academic and cultural<br>events centred around a unique, competitive,
                 and<br>
@@ -206,7 +226,9 @@
             <span id="devtag">Made with ❤️ by Reitwiec Shandilya</span>
         </div>
     </footer>
-
+    <script src="./main.js">
+    </script>
 </body>
+
 
 </html>
