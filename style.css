@@ -165,8 +165,46 @@ html {
     }
 }
 
-.heart {
-    font-size: 15px;
+@keyframes heartbeat {
+    0% {
+        transform: scale(.9);
+    }
+
+    20% {
+        transform: scale(1.1);
+    }
+
+    40% {
+        transform: scale(.9);
+    }
+
+    60% {
+        transform: scale(1.1);
+    }
+
+    80% {
+        transform: scale(.9);
+    }
+
+    100% {
+        transform: scale(.9);
+    }
+}
+
+#heart {
+    color: darkred !important;
+    font-size: 18px;
+    animation: heartbeat 1s infinite;
+}
+
+#myname {
+    color: white;
+    font-weight: 400;
+}
+
+#myname>a {
+    text-decoration: none;
+    color: inherit;
 }
 
 
@@ -570,6 +608,12 @@ hr {
     color: #676767;
     font-weight: 300;
     font-size: 12px;
+}
+
+#devtag {
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 0.4px;
 }
 
 #smlogos>img {
