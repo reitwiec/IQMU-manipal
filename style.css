@@ -584,6 +584,7 @@ hr {
     position: relative;
 }
 
+
 .pattern1 {
     position: absolute;
     width: 500px;
@@ -594,7 +595,7 @@ hr {
 }
 
 #footerbg {
-    margin-top: 50px;
+    margin-top: 150px;
     background: #262727;
     height: 140px;
     text-align: center;
@@ -745,4 +746,33 @@ button:focus {
     to {
         border-right-color: transparent;
     }
+}
+
+.sh {
+    font-size: 27px;
+    margin: 0;
+    padding-top: 45px;
+    margin-left: 30px;
+    letter-spacing: 0.6px;
+    font-weight: 400;
+    color: #494949;
+    text-align: center;
+}
+
+.sponsorlogos {
+    margin: 0;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#gemx {
+    width: 200px;
+}
+
+.sponsors hr {
+    width: 100vw;
+    margin: 0;
 }
