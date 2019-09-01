@@ -18,6 +18,10 @@ html {
     z-index: 1000;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 
 #loader-wrapper .loader-section {
@@ -773,6 +777,6 @@ button:focus {
 }
 
 .sponsors hr {
-    width: 100vw;
+    width: 99.8vw;
     margin: 0;
 }

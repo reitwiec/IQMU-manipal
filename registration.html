@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<!-- DESIGNED AND DEVELOPED BY REITWIEC SHANDILYA
+    
+    Contact me:
+    reitwiec@iecsemanipal.com
+    reitwiec@gmail.com
+
+
+   ▄█    █▄       ▄████████    ▄█   ▄█▄ ███    █▄  ███▄▄▄▄      ▄████████ 
+  ███    ███     ███    ███   ███ ▄███▀ ███    ███ ███▀▀▀██▄   ███    ███ 
+  ███    ███     ███    ███   ███▐██▀   ███    ███ ███   ███   ███    ███ 
+ ▄███▄▄▄▄███▄▄   ███    ███  ▄█████▀    ███    ███ ███   ███   ███    ███ 
+▀▀███▀▀▀▀███▀  ▀███████████ ▀▀█████▄    ███    ███ ███   ███ ▀███████████ 
+  ███    ███     ███    ███   ███▐██▄   ███    ███ ███   ███   ███    ███ 
+  ███    ███     ███    ███   ███ ▀███▄ ███    ███ ███   ███   ███    ███ 
+  ███    █▀      ███    █▀    ███   ▀█▀ ████████▀   ▀█   █▀    ███    █▀  
+                              ▀                                           
+                              
+
+   ▄▄▄▄███▄▄▄▄      ▄████████     ███        ▄████████     ███        ▄████████ 
+ ▄██▀▀▀███▀▀▀██▄   ███    ███ ▀█████████▄   ███    ███ ▀█████████▄   ███    ███ 
+ ███   ███   ███   ███    ███    ▀███▀▀██   ███    ███    ▀███▀▀██   ███    ███ 
+ ███   ███   ███   ███    ███     ███   ▀   ███    ███     ███   ▀   ███    ███ 
+ ███   ███   ███ ▀███████████     ███     ▀███████████     ███     ▀███████████ 
+ ███   ███   ███   ███    ███     ███       ███    ███     ███       ███    ███ 
+ ███   ███   ███   ███    ███     ███       ███    ███     ███       ███    ███ 
+  ▀█   ███   █▀    ███    █▀     ▄████▀     ███    █▀     ▄████▀     ███    █▀  
+            
+  
+
+
+
+  to do:
+  check with google api
+  add name to all the fields
+  write the backend code to check if it works
+  space in ID proof number
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="language" content="english">
+    <meta name="distribution" content="global">
+    <meta name="author" content="IQMU">
+    <meta name="publisher" content="IQMU">
+    <meta name="copyright" content="2019 IQMU">
+    <meta name="description"
+        content="IQMU is an international Quiz competition for Medical Undergraduates which is centred around academics and culture.">
+    <meta name="keywords"
+        content="IQMU,International Quiz for Medical Undergraduates, 2020, Quiz, Competition, International, Medicine, Doctor, Manipal, KMC, College">
+
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./register.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>IQMU 2020</title>
+
+</head>
+
+<body>
+    <div id="loader-wrapper">
+        <div class="gooey">
+
+            <span class="dot" id="loaditem"></span>
+            <div class="dots">
+                <span id="loaditem"></span>
+                <span id="loaditem"></span>
+                <span id="loaditem"></span>
+            </div>
+        </div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+    <div id="redbg">
+        <div id="nicered"></div>
+        <div class="navbar">
+            <div class="nav-logo"><a href="index.html"><img class="logo" src="./assets/logo-01.svg"></a></div>
+            <div class="container">
+                <ul>
+                    <li class="events"><a href="#">Events</a></li>
+                    <li class="itinerary"><a href="#">Itinerary</a></li>
+                    <li class="gallery"><a href="#">Gallery</a></li>
+                    <hr id="navhr" />
+                </ul>
+            </div>
+        </div>
+        <img class="registersvg" src="./assets/register-01.svg">
+        <div id="landingcontent1">
+
+            <p id="lh1">Rules?</p>
+            <p id="lh3">
+                • Each team must comprise of 4 members. <br>
+                • Maximum of 1 intern allowed. Those who finish their internship before (date) will not be
+                eligible to participate. <br>
+                • There may be more than one team from a single University (maximum 5 teams).
+            </p>
+
+            <p id="lh2">Indian Teams <i class="fas fa-flag"></i></p>
+            <p id="lh3">
+                • 10% off on total registration fee cost for colleges sending 3 teams. <br>
+                • 15% off on total registration fee cost for colleges sending 4 or more teams.
+            </p>
+
+            <p id="lh2">International Teams <i class="fas fa-globe"></i></p>
+            <p id="lh3">
+                • 20% off on total registration fee cost for colleges sending 2 or
+                more teams.
+            </p>
+
+        </div>
+        <div id="landingcontent2">
+            <p id="lh1">Fee Structure</p>
+            <p id="lh3">
+                • Registration will be completed after verification of payment. <br>
+                • Accommodation will have to be paid for separately, the details of which can be availed upon
+                expression of interest in participation. <br>
+                • Accommodation will be on a first-come-first-serve basis.
+            </p>
+            <p id="lh2">National Teams</p>
+            <p id="lh3">
+                • Early Bird ₹3200/Team, Late Bird ₹5400/Team.
+            </p>
+            <p id="lh2">SAARC Nations</p>
+            <p id="lh3">
+                • Early Bird $80USD, Late Bird $100USD.
+            </p>
+            <p id="lh2">International Teams</p>
+            <p id="lh3">
+                • Early Bird $100USD, Late Bird $120 USD.
+            </p>
+        </div>
+        <button class="contentregisterbtnnext" id="nextbtn">
+            Next
+        </button>
+        <button class="contentregisterbtnback" id="backbtn">
+            Back
+        </button>
+    </div>
+
+    <div id="aboutussection">
+
+        <div id="dataform">
+            <div id="dataformtitle">Team Registration</div>
+            <hr>
+            <div id="optionscountry">
+                <button class="selectedoption" id="indian"><i class="fas fa-flag"></i> Indian</button>
+                <button id="international"><i class="fas fa-globe"></i> International</button>
+            </div>
+            <!---------------------->
+            <div id="indianform">
+                <div id="condition">
+                    In order to process your registration, we ask you to provide the following
+                    information. Please
+                    note that all fields marked with an asterisk (*) are required.
+                </div>
+                <br>
+                <br>
+                <div id="teamformtitle">Team Information</div>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+                    onload="if(submitted){window.location='http://127.0.0.1:6969/VMUyohBxOhtElatRW9w1igJYuWujcc1SeRmaX0kwiwMAoe3WMHkpTyrQCG1v0M38XFon92MOG2JLwl4Q.html';}"></iframe>
+                <form target="hidden_iframe" onsubmit="submitted=true"
+                    action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSegnZnTY5J-SmURYMqk5DonvU3raqGO2BbVjlnHUUc2y9uRvQ/formResponse"
+                    autocomplete="off" method="post" target="hidden_iframe">
+                    <input type="hidden" id="custId" name="entry.838792820" value="YES">
+                    <div>
+                        <div id="datainputs"><span>College Name <span id="starmandatory">*</span> </span><br>
+                            <input type="text" placeholder="Enter College Name Here" id="collegeNameField"
+                                name="entry.820566320" required></div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Team Representative Name <span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter Team Rep Name Here" id="teamRepNameField"
+                                name="entry.1828862628" required></div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Faculty Coordinator Contact Number <span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter Faculty Contact Here" id="facultyContactField"
+                                name="entry.1367202527" required></div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Faculty Coordinator Email ID <span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter Faculty ID Here" id="facultyIdField"
+                                name="entry.1483384301" required></div>
+                    </div>
+
+                    <!-- Member 1 -->
+                    <div id="memberheading">Team Member 1</div>
+                    <div>
+                        <div id="datainputs"><span>Name <span id="starmandatory">*</span> </span><br>
+                            <input type="text" placeholder="Enter Full Name Here" id="member1_name"
+                                name="entry.1320326315" required></div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Contact Number<span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter Number Here" id="member1_contact"
+                                name="entry.1378767062" required></div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Gender <span id="starmandatory">*</span>
+                            </span><br>
+
+
+                            <div class="genderOptions form-group" name="entry.197094357">
+                                <label class="container">
+                                    <input type="radio" checked="checked" name="entry.197094357" value="male" required>
+                                    <span class="checkmark"></span>
+                                    Male
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.197094357" value="female" required>
+                                    <span class="checkmark"></span>
+                                    Female
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Year of Study <span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter Year of Study Here" id="member1_yearOfStudy"
+                                name="entry.2046949198" required></div>
+                    </div>
+
+                    <div>
+                        <div id="datainputs"><span>ID Proof Type <span id="starmandatory">*</span>
+                            </span><br>
+                            <div class="IdOptions form-group" name="entry.673695175">
+                                <label class="container">
+                                    <input type="radio" checked="checked" name="entry.673695175" value="aadhar"
+                                        required>
+                                    <span class="checkmark"></span>
+                                    Aadhar Card
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.673695175" value="DriversLicense" required>
+                                    <span class="checkmark"></span>
+                                    Driver’s License
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.673695175" value="votersID" required>
+                                    <span class="checkmark"></span>
+                                    Voter's ID
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.673695175" value="collegeID" required>
+                                    <span class="checkmark"></span>
+                                    College ID
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div id="datainputs"><span>ID Proof Number<span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter ID Proof Number Here" id="member1_idProofNumber"
+                                name="entry.1717022079" required>
+                        </div>
+                    </div>
+                    <!--  -->
+
+
+
+                    <!-- Member 2 -->
+                    <div id="memberheading">Team Member 2</div>
+                    <div>
+                        <div id="datainputs"><span>Name <span id="starmandatory">*</span> </span><br>
+                            <input type="text" placeholder="Enter Full Name Here" id="member2_name"
+                                name="entry.200606524" required></div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Contact Number<span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter Number Here" id="member2_contact"
+                                name="entry.160364756" required></div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Gender <span id="starmandatory">*</span>
+                            </span><br>
+                            <div class="genderOptions form-group" name="entry.2043276905" required>
+                                <label class="container">
+                                    <input type="radio" checked="checked" name="entry.2043276905" value="male" required>
+                                    <span class="checkmark"></span>
+                                    Male
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.2043276905" value="female" required>
+                                    <span class="checkmark"></span>
+                                    Female
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Year of Study <span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter Year of Study Here" id="member2_yearOfStudy"
+                                name="entry.2116292387" required></div>
+                    </div>
+
+                    <div>
+                        <div id="datainputs"><span>ID Proof Type <span id="starmandatory">*</span>
+                            </span><br>
+                            <div class="IdOptions form-group" name="entry.1670522520">
+                                <label class="container">
+                                    <input type="radio" checked="checked" name="entry.1670522520" value="aadhar"
+                                        required>
+                                    <span class="checkmark"></span>
+                                    Aadhar Card
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.1670522520" value="DriversLicense" required>
+                                    <span class="checkmark"></span>
+                                    Driver’s License
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.1670522520" value="votersID" required>
+                                    <span class="checkmark"></span>
+                                    Voter's ID
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.1670522520" value="collegeID" required>
+                                    <span class="checkmark"></span>
+                                    College ID
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div id="datainputs"><span>ID Proof Number<span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter ID Proof Number Here" id="member2_idProofNumber"
+                                name="entry.60678890" required>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <!-- Member 3 -->
+                    <div id="memberheading">Team Member 3</div>
+                    <div>
+                        <div id="datainputs"><span>Name <span id="starmandatory">*</span> </span><br>
+                            <input type="text" placeholder="Enter Full Name Here" id="member3_name"
+                                name="entry.222152175" required></div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Contact Number<span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter Number Here" id="member3_contact"
+                                name="entry.782478527" required></div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Gender <span id="starmandatory">*</span>
+                            </span><br>
+                            <div class="genderOptions form-group" name="entry.2053092042">
+                                <label class="container">
+                                    <input type="radio" checked="checked" name="entry.2053092042" value="male" required>
+                                    <span class="checkmark"></span>
+                                    Male
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.2053092042" value="female" required>
+                                    <span class="checkmark"></span>
+                                    Female
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Year of Study <span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter Year of Study Here" id="member3_yearOfStudy"
+                                name="entry.1830470999" required></div>
+                    </div>
+
+                    <div>
+                        <div id="datainputs"><span>ID Proof Type <span id="starmandatory">*</span>
+                            </span><br>
+                            <div class="IdOptions form-group" name="entry.769853599">
+                                <label class="container">
+                                    <input type="radio" checked="checked" name="entry.769853599" value="aadhar"
+                                        required>
+                                    <span class="checkmark"></span>
+                                    Aadhar Card
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.769853599" value="DriversLicense" required>
+                                    <span class="checkmark"></span>
+                                    Driver’s License
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.769853599" value="votersID" required>
+                                    <span class="checkmark"></span>
+                                    Voter's ID
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.769853599" value="collegeID" required>
+                                    <span class="checkmark"></span>
+                                    College ID
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div id="datainputs"><span>ID Proof Number<span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter ID Proof Number Here" id="member3_idProofNumber"
+                                name="entry.1617061068" required>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <!-- Member 4 -->
+                    <div id="memberheading">Team Member 4</div>
+                    <div>
+                        <div id="datainputs"><span>Name <span id="starmandatory">*</span> </span><br>
+                            <input type="text" placeholder="Enter Full Name Here" id="member4_name"
+                                name="entry.1859528101" required></div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Contact Number<span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter Number Here" id="member4_contact"
+                                name="entry.640908161" required></div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Gender <span id="starmandatory">*</span>
+                            </span><br>
+                            <div class="genderOptions form-group" name="entry.1731058358">
+                                <label class="container">
+                                    <input type="radio" checked="checked" name="entry.1731058358" value="male" required>
+                                    <span class="checkmark"></span>
+                                    Male
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.1731058358" value="female" required>
+                                    <span class="checkmark"></span>
+                                    Female
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Year of Study <span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter Year of Study Here" id="member4_yearOfStudy"
+                                name="entry.248366406" required></div>
+                    </div>
+
+                    <div>
+                        <div id="datainputs"><span>ID Proof Type <span id="starmandatory">*</span>
+                            </span><br>
+                            <div class="IdOptions form-group" name="entry.134263460">
+                                <label class="container">
+                                    <input type="radio" checked="checked" name="entry.134263460" value="aadhar"
+                                        required>
+                                    <span class="checkmark"></span>
+                                    Aadhar Card
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.134263460" value="DriversLicense" required>
+                                    <span class="checkmark"></span>
+                                    Driver’s License
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.134263460" value="votersID" required>
+                                    <span class="checkmark"></span>
+                                    Voter's ID
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.134263460" value="collegeID" required>
+                                    <span class="checkmark"></span>
+                                    College ID
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div id="datainputs"><span>ID Proof Number<span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter ID Proof Number Here" id="member4_idProofNumber"
+                                name="entry.18198286" required>
+                        </div>
+                    </div>
+                    <!--  -->
+
+                    <div id="condition">
+                        <br> Please let us know if any team members
+                        are interested in the following amenities:
+                        <br><br><input type="checkbox" name="entry.1829328414" value="yes"> <strong>T-Shirt</strong>
+
+                        <br><br><input type="checkbox" name="entry.1112130080" value="yes">
+                        <strong>Accommodation (Charges separate from registration fee)</strong>
+
+                        <br><br><input type="checkbox" name="entry.1135052178" value="yes"> <strong>Travel
+                            Assistance</strong>
+                        <br>
+                        <br>
+                        <br>
+                        Please send the filled in Attestation form with all required signatures to
+                        <strong>iqmu.manipal@gmail.com</strong>
+                        <br>
+                        <br>
+                        <a href="https://drive.google.com/file/d/1VRrisjOe50IkNkWtlbVbaZRkDZaOWwFQ/view?usp=sharing"
+                            style="color:#4ac673;" target="_blank">
+                            <strong>Click here for the Attestation form</strong>
+                        </a>
+                    </div>
+                    <button class="submitBtn" type="submit">
+                        REGISTER
+                    </button>
+                </form>
+            </div>
+
+            <!-------------------->
+            <div id="internationalform" class="hideform">
+                <div id="condition">
+                    In order to process your registration, we ask you to provide the following
+                    information. Please
+                    note that all fields marked with an asterisk (*) are required.
+                </div>
+                <br>
+                <br>
+                <div id="teamformtitle">Team Information</div>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+                    onload="if(submitted){window.location='http://127.0.0.1:6969/VMUyohBxOhtElatRW9w1igJYuWujcc1SeRmaX0kwiwMAoe3WMHkpTyrQCG1v0M38XFon92MOG2JLwl4Q.html';}"></iframe>
+                <form target="hidden_iframe" onsubmit="submitted=true"
+                    action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSegnZnTY5J-SmURYMqk5DonvU3raqGO2BbVjlnHUUc2y9uRvQ/formResponse"
+                    autocomplete="off" method="post" target="hidden_iframe">
+                    <input type="hidden" id="custId" name="entry.838792820" value="NO">
+                    <div>
+                        <div id="datainputs"><span>College Name <span id="starmandatory">*</span> </span><br>
+                            <input type="text" placeholder="Enter College Name Here" id="collegeNameField"
+                                name="entry.820566320" required></div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Team Representative Name <span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter Team Rep Name Here" id="teamRepNameField"
+                                name="entry.1828862628" required></div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Faculty Coordinator Contact Number <span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter Faculty Contact Here" id="facultyContactField"
+                                name="entry.1367202527" required></div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Faculty Coordinator Email ID <span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter Faculty ID Here" id="facultyIdField"
+                                name="entry.1483384301" required></div>
+                    </div>
+
+                    <!-- Member 1 -->
+                    <div id="memberheading">Team Member 1</div>
+                    <div>
+                        <div id="datainputs"><span>Name <span id="starmandatory">*</span> </span><br>
+                            <input type="text" placeholder="Enter Full Name Here" id="member1_name"
+                                name="entry.1320326315" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Contact Number<span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter Number Here" id="member1_contact"
+                                name="entry.1378767062" required></div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Gender <span id="starmandatory">*</span>
+                            </span><br>
+
+
+                            <div class="genderOptions form-group" name="entry.197094357">
+                                <label class="container">
+                                    <input type="radio" checked="checked" name="entry.197094357" value="male" required>
+                                    <span class="checkmark"></span>
+                                    Male
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.197094357" value="female" required>
+                                    <span class="checkmark"></span>
+                                    Female
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Year of Study <span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter Year of Study Here" id="member1_yearOfStudy"
+                                name="entry.2046949198" required></div>
+                    </div>
+
+                    <div>
+                        <div id="datainputs"><span>ID Proof Type <span id="starmandatory">*</span>
+                            </span><br>
+                            <div class="IdOptions form-group" name="entry.673695175">
+                                <label class="container">
+                                    <input type="radio" checked="checked" name="entry.673695175" value="Passport"
+                                        required>
+                                    <span class="checkmark"></span>
+                                    Passport
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.673695175" value="DriversLicense" required>
+                                    <span class="checkmark"></span>
+                                    Driver’s License
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.673695175" value="votersID" required>
+                                    <span class="checkmark"></span>
+                                    Voter's ID
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.673695175" value="collegeID" required>
+                                    <span class="checkmark"></span>
+                                    College ID
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div id="datainputs"><span>ID Proof Number<span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter ID Proof Number Here" id="member1_idProofNumber"
+                                name="entry.1717022079" required>
+                        </div>
+                    </div>
+                    <!--  -->
+
+
+
+                    <!-- Member 2 -->
+                    <div id="memberheading">Team Member 2</div>
+                    <div>
+                        <div id="datainputs"><span>Name <span id="starmandatory">*</span> </span><br>
+                            <input type="text" placeholder="Enter Full Name Here" id="member2_name"
+                                name="entry.200606524" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Contact Number<span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter Number Here" id="member2_contact"
+                                name="entry.160364756" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Gender <span id="starmandatory">*</span>
+                            </span><br>
+                            <div class="genderOptions form-group" name="entry.2043276905" required>
+                                <label class="container">
+                                    <input type="radio" checked="checked" name="entry.2043276905" value="male" required>
+                                    <span class="checkmark"></span>
+                                    Male
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.2043276905" value="female" required>
+                                    <span class="checkmark"></span>
+                                    Female
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Year of Study <span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter Year of Study Here" id="member2_yearOfStudy"
+                                name="entry.2116292387" required></div>
+                    </div>
+
+                    <div>
+                        <div id="datainputs"><span>ID Proof Type <span id="starmandatory">*</span>
+                            </span><br>
+                            <div class="IdOptions form-group" name="entry.1670522520">
+                                <label class="container">
+                                    <input type="radio" checked="checked" name="entry.1670522520" value="Passport"
+                                        required>
+                                    <span class="checkmark"></span>
+                                    Passport
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.1670522520" value="DriversLicense" required>
+                                    <span class="checkmark"></span>
+                                    Driver’s License
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.1670522520" value="votersID" required>
+                                    <span class="checkmark"></span>
+                                    Voter's ID
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.1670522520" value="collegeID" required>
+                                    <span class="checkmark"></span>
+                                    College ID
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div id="datainputs"><span>ID Proof Number<span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter ID Proof Number Here" id="member2_idProofNumber"
+                                name="entry.60678890" required>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <!-- Member 3 -->
+                    <div id="memberheading">Team Member 3</div>
+                    <div>
+                        <div id="datainputs"><span>Name <span id="starmandatory">*</span> </span><br>
+                            <input type="text" placeholder="Enter Full Name Here" id="member3_name"
+                                name="entry.222152175" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Contact Number<span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter Number Here" id="member3_contact"
+                                name="entry.782478527" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Gender <span id="starmandatory">*</span>
+                            </span><br>
+                            <div class="genderOptions form-group" name="entry.2053092042">
+                                <label class="container">
+                                    <input type="radio" checked="checked" name="entry.2053092042" value="male" required>
+                                    <span class="checkmark"></span>
+                                    Male
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.2053092042" value="female" required>
+                                    <span class="checkmark"></span>
+                                    Female
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Year of Study <span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter Year of Study Here" id="member3_yearOfStudy"
+                                name="entry.1830470999" required></div>
+                    </div>
+
+                    <div>
+                        <div id="datainputs"><span>ID Proof Type <span id="starmandatory">*</span>
+                            </span><br>
+                            <div class="IdOptions form-group" name="entry.769853599">
+                                <label class="container">
+                                    <input type="radio" checked="checked" name="entry.769853599" value="Passport"
+                                        required>
+                                    <span class="checkmark"></span>
+                                    Passport
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.769853599" value="DriversLicense" required>
+                                    <span class="checkmark"></span>
+                                    Driver’s License
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.769853599" value="votersID" required>
+                                    <span class="checkmark"></span>
+                                    Voter's ID
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.769853599" value="collegeID" required>
+                                    <span class="checkmark"></span>
+                                    College ID
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div id="datainputs"><span>ID Proof Number<span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter ID Proof Number Here" id="member3_idProofNumber"
+                                name="entry.1617061068" required>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <!-- Member 4 -->
+                    <div id="memberheading">Team Member 4</div>
+                    <div>
+                        <div id="datainputs"><span>Name <span id="starmandatory">*</span> </span><br>
+                            <input type="text" placeholder="Enter Full Name Here" id="member4_name"
+                                name="entry.1859528101" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Contact Number<span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter Number Here" id="member4_contact"
+                                name="entry.640908161" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Gender <span id="starmandatory">*</span>
+                            </span><br>
+                            <div class="genderOptions form-group" name="entry.1731058358">
+                                <label class="container">
+                                    <input type="radio" checked="checked" name="entry.1731058358" value="male" required>
+                                    <span class="checkmark"></span>
+                                    Male
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.1731058358" value="female" required>
+                                    <span class="checkmark"></span>
+                                    Female
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div id="datainputs"><span>Year of Study <span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter Year of Study Here" id="member4_yearOfStudy"
+                                name="entry.248366406" required></div>
+                    </div>
+
+                    <div>
+                        <div id="datainputs"><span>ID Proof Type <span id="starmandatory">*</span>
+                            </span><br>
+                            <div class="IdOptions form-group" name="entry.134263460">
+                                <label class="container">
+                                    <input type="radio" checked="checked" name="entry.134263460" value="Passport"
+                                        required>
+                                    <span class="checkmark"></span>
+                                    Passport
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.134263460" value="DriversLicense" required>
+                                    <span class="checkmark"></span>
+                                    Driver’s License
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.134263460" value="votersID" required>
+                                    <span class="checkmark"></span>
+                                    Voter's ID
+                                </label>
+                                <label class="container">
+                                    <input type="radio" name="entry.134263460" value="collegeID" required>
+                                    <span class="checkmark"></span>
+                                    College ID
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div id="datainputs"><span>ID Proof Number<span id="starmandatory">*</span>
+                            </span><br>
+                            <input type="text" placeholder="Enter ID Proof Number Here" id="member4_idProofNumber"
+                                name="entry.18198286" required>
+                        </div>
+                    </div>
+                    <!--  -->
+
+                    <div id="condition"><br> Please let us know if any team members
+                        are interested in the following amenities:
+                        <br><br>
+                        <input type="checkbox" name="entry.1829328414" value="yes"> <strong>T-Shirt</strong>
+
+                        <br><br><input type="checkbox" name="entry.1112130080" value="yes">
+                        <strong>Accommodation (Charges separate from registration fee)</strong>
+
+                        <br><br><input type="checkbox" name="entry.1135052178" value="yes"> <strong>Travel
+                            Assistance</strong> <br><br>
+                        In order to process your registration, we ask you to provide the following
+                        information. Please
+                        note that all fields marked with an asterisk (*) are required.
+                    </div>
+                    <button class="submitBtn" type="submit">
+                        REGISTER
+                    </button>
+                </form>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <div id="footerbg">
+
+            <div id="smlogos">
+                <a href="https://www.instagram.com/iqmu2020/" target="_blank"><img src="./assets/instalogo.svg"
+                        alt=""></a>
+                <a href="https://www.facebook.com/IQMU2019/" target="_blank"><img src="./assets/facebooklogo.svg"
+                        alt=""></a>
+
+            </div>
+            <span id="devtag">Made with &nbsp;<i class="fa fa-heart" id="heart"></i> &nbsp;by <span id="myname">&nbsp;<a
+                        href="https://www.linkedin.com/in/reitwiec-shandilya-ba2014166" target="_blank">Reitwiec
+                        Shandilya</a></span></span>
+            <span id="copyright">© 2019, IQMU Manipal. All rights reserved. </span>
+        </div>
+    </footer>
+    <script src="./main.js">
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+
+</html>
