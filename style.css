@@ -780,3 +780,53 @@ button:focus {
     width: 99.8vw;
     margin: 0;
 }
+
+#member1>#imgbox {
+    background-image: url("./assets/Avanti.jpeg");
+    background-size: cover;
+}
+
+#member2>#imgbox {
+    background-image: url("./assets/Sharvari.jpeg");
+    background-size: cover;
+}
+
+#member3>#imgbox {
+    background-image: url("./assets/Sabin.jpeg");
+    background-size: cover;
+}
+
+#member4>#imgbox {
+    background-image: url("./assets/Raadhika.jpeg");
+    background-size: cover;
+}
+
+#member5>#imgbox {
+    background-image: url("./assets/Ishita.jpeg");
+    background-size: cover;
+}
+
+#member6>#imgbox {
+    background-image: url("./assets/Sutanka.jpeg");
+    background-size: cover;
+}
+
+#member7>#imgbox {
+    background-image: url("./assets/Mahisha.jpeg");
+    background-size: cover;
+}
+
+#member8>#imgbox {
+    background-image: url("./assets/Vishalraj.jpeg");
+    background-size: cover;
+}
+
+#member9>#imgbox {
+    background-image: url("./assets/Vartika.jpeg");
+    background-size: cover;
+}
+
+#member10>#imgbox {
+    background-image: url("./assets/Ritika.jpeg");
+    background-size: cover;
+}
