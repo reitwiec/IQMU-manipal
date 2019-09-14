@@ -15,6 +15,10 @@
     z-index: 0;
 }
 
+html,
+body {
+    background: #F6F7F9;
+}
 
 #nicered {
     background-color: #F6F7F9;
@@ -133,10 +137,6 @@ button:hover {
     font-size: 15px;
 }
 
-#footerbg {
-    margin-top: 0px;
-}
-
 #landingcontent {
     margin-top: 20px;
     z-index: 10;
@@ -145,10 +145,17 @@ button:hover {
 
 .wiggle {
     position: absolute;
-    z-index: -10;
-    right: -100px !important;
-    top: -175px;
-    width: 70vw;
+    width: 100vw;
     opacity: 0.3;
+    bottom: 0;
+}
 
+#footer {
+    margin-top: 150px;
+    background: #262727;
+    height: 140px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
