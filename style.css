@@ -197,7 +197,7 @@ a {
 
 #heart {
     color: #DB3143 !important;
-    font-size: 110%;
+    font-size: 1.5vw;
     animation: heartbeat 1s infinite;
 }
 
@@ -247,7 +247,7 @@ a {
 }
 
 .doctor {
-    width: 800px;
+    width: 65vw;
     position: absolute;
     bottom: 0;
     right: 60px;
@@ -256,7 +256,7 @@ a {
 }
 
 .logo {
-    width: 100px;
+    width: 8vw;
 }
 
 .navbar {
@@ -287,11 +287,11 @@ a {
 } */
 
 .registerbtn {
-    height: 40px;
-    width: 140px;
+    height: 2.9vw;
+    width: 11vw;
     border-radius: 100px;
     border: none;
-    font-size: 100%;
+    font-size: 1.3vw;
     font-weight: 500;
     color: #F4364C;
     background: white;
@@ -300,7 +300,7 @@ a {
 #lh1 {
     margin: 0;
     margin-left: 100px;
-    font-size: 43px;
+    font-size: 3.3vw;
     font-weight: 500;
 
 
@@ -310,7 +310,7 @@ a {
     margin: 0;
     margin-top: 30px;
     margin-left: 100px;
-    font-size: 25px;
+    font-size: 2.2vw;
     font-weight: 400;
 }
 
@@ -318,7 +318,7 @@ a {
     margin: 0;
     margin-top: 60px;
     margin-left: 100px;
-    font-size: 18px;
+    font-size: 1.5vw;
     letter-spacing: 0.6px;
     font-weight: 300;
     line-height: 30px;
@@ -328,11 +328,11 @@ a {
     margin: 0;
     margin-top: 10px;
     margin-left: 100px;
-    height: 40px;
-    width: 140px;
+    height: 2.9vw;
+    width: 11vw;
     border-radius: 100px;
     border: none;
-    font-size: 17px;
+    font-size: 1.35vw;
     font-weight: 500;
     color: #F4364C;
     background: white;
@@ -346,7 +346,7 @@ a {
 }
 
 #auh {
-    font-size: 28px;
+    font-size: 2.4vw;
     margin: 0;
     padding-top: 60px;
     margin-left: 30px;
@@ -357,14 +357,14 @@ a {
 
 #auc {
     width: 85%;
-    font-size: 18px;
+    font-size: 1.5vw;
     margin: 0;
     padding-top: 30px;
     margin-left: 30px;
     font-weight: 400;
     letter-spacing: 0.6px;
     color: #494949;
-    line-height: 27px;
+    line-height: 2.4vw;
 }
 
 
@@ -400,13 +400,13 @@ hr {
 }
 
 .mission {
-    width: 35%;
+    width: 40%;
 }
 
 
 #mh {
     vertical-align: top;
-    font-size: 28px;
+    font-size: 2.4vw;
     margin: 0;
     margin-left: 30px;
     letter-spacing: 0.3px;
@@ -415,14 +415,14 @@ hr {
 }
 
 #mc {
-    font-size: 18px;
+    font-size: 1.5vw;
     margin: 0;
     margin-top: 14px;
     margin-left: 30px;
     letter-spacing: 0.6px;
     font-weight: 400;
     color: #494949;
-    line-height: 27px;
+    line-height: 2.4vw;
 }
 
 
@@ -442,7 +442,7 @@ hr {
 
 #vh {
     vertical-align: top;
-    font-size: 28px;
+    font-size: 2.4vw;
     margin: 0;
     margin-left: -120px;
     margin-right: 120px;
@@ -452,7 +452,7 @@ hr {
 }
 
 #vc {
-    font-size: 18px;
+    font-size: 1.5vw;
     margin: 0;
     margin-left: -120px;
     margin-top: 14px;
@@ -464,7 +464,7 @@ hr {
 }
 
 .comh {
-    font-size: 33px;
+    font-size: 2.5vw;
     margin: 0;
     padding-top: 45px;
     margin-left: 30px;
@@ -648,7 +648,7 @@ li>a {
     width: 29%;
     margin: 0;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.5vw;
     font-weight: 300;
     color: white;
 }
@@ -772,7 +772,7 @@ button:focus {
 }
 
 #gemx {
-    width: 200px;
+    width: 15vw;
 }
 
 .sponsors hr {
@@ -832,7 +832,7 @@ button:focus {
 
 #lh3>a {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.5vw;
     text-decoration: underline;
     color: white;
     z-index: 20000;
