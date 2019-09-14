@@ -197,7 +197,7 @@ a {
 
 #heart {
     color: #DB3143 !important;
-    font-size: 18px;
+    font-size: 110%;
     animation: heartbeat 1s infinite;
 }
 
@@ -291,7 +291,7 @@ a {
     width: 140px;
     border-radius: 100px;
     border: none;
-    font-size: 17px;
+    font-size: 100%;
     font-weight: 500;
     color: #F4364C;
     background: white;
@@ -424,7 +424,6 @@ hr {
     color: #494949;
     line-height: 27px;
 }
-
 
 
 
@@ -850,3 +849,96 @@ button:focus {
 footer {
     z-index: 200 !important;
 }
+
+
+.mobile {
+    display: none;
+}
+
+@keyframes slidedown {
+    0% {
+        transform: translateX(0) translateY(-30px);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0px);
+    }
+}
+
+.close {
+    display: none;
+}
+
+#overlay {
+    transition: 1s;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    z-index: 20;
+    position: absolute;
+    background-color: black;
+    animation: appear3 1s 1 0s ease-in-out;
+}
+
+#overlay a {
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 300;
+
+}
+
+#overlay a:not(:first-child):after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 12%;
+    padding-top: 10px;
+    border-bottom: 2px solid #00FFD0;
+}
+
+#overlay a:not(:first-child) {
+    width: 100%;
+    display: block;
+    margin: 100px 0 0 0;
+    animation: slidedown 1s 1 0s ease-out;
+}
+
+#overlay a:first-child {
+    font-size: 30px;
+    float: right;
+    margin: 15px 5% 0 0;
+}
+
+#overlay a:hover {
+    opacity: 0.5;
+}
+
+
+
+#aboutussection {
+    background-color: #F6F7F9;
+    min-height: 110vh;
+    margin: 0;
+    padding: 0px 40px 0 40px;
+    position: relative;
+    overflow: hidden;
+    z-index: -20;
+}
+
+/* @media screen and (min-width: 1400px) {
+    #aboutussection {
+        height: 120vh;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    #aboutussection {
+        width: 130vh;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    #aboutussection {
+        width: 150vh;
+    }
+} */

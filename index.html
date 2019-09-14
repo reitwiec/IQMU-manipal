@@ -51,7 +51,9 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script type="text/javascript" src="nav.js"></script>
     <title>IQMU 2020</title>
+
 
 </head>
 
@@ -71,10 +73,17 @@
         <div class="loader-section section-right"></div>
 
     </div>
+    <div id="overlay" class="close">
+        <a href="#" id="close">&#215;</a>
+        <a href="aboutUs.html">About Us</a>
+        <a href="events.html">Events</a>
+        <a href="itinerary.html">Itinerary</a>
+        <a href="register.html">How to Register?</a>
+    </div>
     <div id="redbg">
         <div id="nicered"></div>
         <img class="doctor" src="./assets/landing-01.svg">
-        <div class="navbar">
+        <div class="navbar desktop">
             <div class="nav-logo"><a href="./index.html"><img class="logo" src="./assets/logo-01.svg"></a></div>
             <div class="container">
                 <ul>
@@ -87,6 +96,9 @@
             <button class="registerbtn">
                 <a href="./registration.html">Register Now</a>
             </button>
+        </div>
+        <div class="mobile">
+            <a href="#" id="open">&#9776;</a>
         </div>
         <div id="landingcontent">
             <p id="lh1">International Quiz for Medical<br>Undergraduates 2020
