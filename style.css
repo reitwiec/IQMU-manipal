@@ -1240,4 +1240,8 @@ footer {
         font-size: 19px;
     }
 
+    #aboutussection {
+        min-height: 80vh;
+    }
+
 }
