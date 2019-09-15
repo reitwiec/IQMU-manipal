@@ -52,6 +52,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script type="text/javascript" src="nav.js"></script>
     <title>IQMU 2020</title>
 
 </head>
@@ -72,10 +73,18 @@
         <div class="loader-section section-right"></div>
 
     </div>
+
+    <div id="overlay" class="close">
+        <a href="#" id="close">&#215;</a>
+        <a href="./events.html">Events</a>
+        <a href="./itinerary.html">Itinerary</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./registration.html">Register</a>
+    </div>
+
     <div id="redbg">
         <div id="nicered"></div>
-        <!-- <img class="doctor" src="./assets/landing-01.svg"> -->
-        <div class="navbar">
+        <div class="navbar desktop">
             <div class="nav-logo"><a href="./index.html"><img class="logo" src="./assets/logoevent-01.svg"></a></div>
             <div class="container">
                 <ul>
@@ -88,6 +97,13 @@
             <button class="registerbtn">
                 <a href="./registration.html">Register Now</a>
             </button>
+        </div>
+        <div class="mobile">
+            <div class="navbar">
+                <div class="nav-logo"><a href="./index.html"><img class="logo" src="./assets/logoevent-01.svg"></a>
+                </div>
+                <a href="#" id="open">&#9776;</a>
+            </div>
         </div>
 
         <div id="landingcontent">
@@ -115,6 +131,7 @@
                 </div>
             </div>
             <div class="testimonial" id="test2" data-aos="fade-up" data-aos-duration="1500">
+                <img class="testimg" src="./assets/Testimonial_2.jpg" alt="">
                 <div class=" testcontent">
                     <span class="name">Anjali</span><br>
                     <span class="college">BGS Medical College</span><br> <br>
@@ -130,7 +147,7 @@
                         for providing such a platform for showcasing and assessing our knowledge and a chance to enhance
                         practical skills. <span class="quotes">"</span></span>
                 </div>
-                <img class="testimg" src="./assets/Testimonial_2.jpg" alt="">
+
             </div>
 
             <div class="testimonial" id="test3" data-aos="fade-up" data-aos-duration="1500">

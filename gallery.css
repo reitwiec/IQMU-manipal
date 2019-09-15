@@ -133,3 +133,116 @@ footer {
     right: 0;
     opacity: 0.3;
 }
+
+#open {
+    color: #F4364C;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:600px) {
+    .testimonial {
+        margin-bottom: 80px;
+        position: none;
+        left: auto;
+        flex-wrap: wrap;
+
+    }
+
+    #test2 {
+        left: auto;
+        right: auto !important;
+        top: 800px;
+    }
+
+    #test3 {
+        top: 1325px;
+    }
+
+    .testimg {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .testcontent {
+        text-align: center;
+        width: 3000%;
+        /* background: yellow; */
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .college {
+        font-size: 10px;
+    }
+
+    .words {
+        font-size: 10px;
+    }
+
+
+}
+
+
+@media(max-width:400px) and (max-height:700px) {
+    #redbg {
+        height: 250vh;
+    }
+
+}
+
+@media(max-width:400px) and (max-height:600px) {
+    #redbg {
+        height: 320vh;
+    }
+
+    .testimonial {
+        margin-bottom: 80px;
+        position: none;
+        left: auto;
+        flex-wrap: wrap;
+
+    }
+
+    #test2 {
+        left: auto;
+        right: auto !important;
+        top: 800px;
+    }
+
+    #test3 {
+        top: 1325px;
+    }
+
+    .testimg {
+        width: 240px;
+        margin-bottom: 20px;
+    }
+
+    .testcontent {
+        text-align: center;
+        width: 3000%;
+        /* background: yellow; */
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .college {
+        font-size: 10px;
+    }
+
+    .words {
+        font-size: 10px;
+    }
+
+}
