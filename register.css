@@ -127,8 +127,6 @@ li>a {
     margin-left: 50px;
     font-size: 38px;
     font-weight: 500;
-
-
 }
 
 .registersvg {
@@ -429,4 +427,11 @@ li>a {
 
 #condition>a:hover {
     text-decoration: underline;
+}
+
+.events>a,
+.itinerary>a,
+.gallery>a {
+    font-size: 1.4vw;
+
 }
