@@ -302,3 +302,45 @@ button:hover {
 #open {
     color: #F4364C;
 }
+
+#wrapper {
+    margin: 30px;
+}
+
+#maps {
+    width: 80%;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:600px) {
+    #maps {
+        height: 440px;
+
+    }
+
+    #auh:after {
+        width: 13%;
+
+    }
+
+}
+
+
+@media(max-width:400px) and (max-height:700px) {}
+
+@media(max-width:500px) and (min-width:410px) {}
+
+
+
+@media(max-width:400px) and (max-height:600px) {}
