@@ -152,7 +152,7 @@ button:hover {
 }
 
 #footer {
-    margin-top: 150px;
+    margin-top: 400px;
     background: #262727;
     height: 140px;
     text-align: center;
@@ -166,19 +166,123 @@ button:hover {
 }
 
 
+.eventimgs {
+    display: block;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ev1 {
+    width: 50%;
+    transition: 0.4s;
+}
+
+.ev1:hover {
+    width: 52%;
+}
+
+.ev2 {
+    width: 57%;
+    transition: 0.4s;
+}
+
+.ev2:hover {
+    width: 59%;
+}
+
+.ev3 {
+    width: 67%;
+    transition: 0.4s;
+}
+
+.ev3:hover {
+    width: 69%;
+}
+
+/* .gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease;
+}
+
+.item:hover {
+    flex: 7;
+    cursor: pointer;
+}
+
+.item-1 {
+    background-image: url('./assets/event1.jpeg');
+}
+
+.item-2 {
+    background-image: url('./assets/event2.jpeg');
+}
+
+.item-3 {
+    background-image: url('./assets/event3.jpeg');
+} */
 
 
 
 
+.items {
+    display: none;
+    margin: 80px;
+    margin-left: 0;
+    height: 200px;
+    padding: 10px;
+    padding-left: 30px;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    transform: scale(0.98);
+    will-change: transform;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 0;
+    perspective: 500px;
+}
 
+.items.active {
+    background: rgba(255, 255, 255, 0.3);
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1);
+}
 
-
-
-
-
-
-
-
+.item {
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+    height: calc(100% - 40px);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
@@ -215,12 +319,54 @@ button:hover {
     }
 
     #message {
+        margin-top: 30px;
         font-size: 15px;
     }
 
     #level {
         margin-top: -50px;
     }
+
+    .eventimgs {
+        display: none;
+    }
+
+
+    #footer {
+        margin-top: 500px;
+    }
+
+
+    .items {
+        display: block;
+    }
+
+    .ev1 {
+        width: 90%;
+    }
+
+    .ev2 {
+        width: 70%;
+
+    }
+
+    .ev3 {
+        width: 120%;
+    }
+
+    .ev1:hover {
+        width: 90%;
+    }
+
+    .ev2:hover {
+        width: 70%;
+
+    }
+
+    .ev3:hover {
+        width: 120%;
+    }
+
 }
 
 
